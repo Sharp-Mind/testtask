@@ -12,11 +12,13 @@ file_path = "data_file.json"
 
 class Command(BaseCommand):
 
-    help = "Adding new codes"
+    help = "Adding new codes"    
 
     def add_arguments(self, parser):
-        parser.add_argument("amount", type=int, help="Количество создаваемых кодов")
-        parser.add_argument("group", type=str, help="Для какой группы создаются коды")
+        parser.add_argument("amount", type=str,
+                            help="Количество создаваемых кодов")
+        parser.add_argument("group", type=str,
+                            help="Для какой группы создаются коды")
 
     def handle(self, *args, **kwargs):
 
@@ -59,8 +61,3 @@ class Command(BaseCommand):
             json.dump(json_dict, f)
 
         self.stdout.write("Коды были добавлены")
-
-
-# add_code(user_input[0], user_input[1])
-# code = "w"
-# print(check_code(code))

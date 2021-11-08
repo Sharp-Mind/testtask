@@ -8,7 +8,7 @@
 ## Установка (Linux)
 
 - установить виртуальное окружение в выделенную заранее папку `python3 -m virtualenv -p python3 venv` и активировать его `source ./venv/bin/activate`
-- клонировать репозиторй `git clone https://github.com/Sharp-Mind/testtask.git`
+- клонировать репозиторий `git clone https://github.com/Sharp-Mind/testtask.git` и перейти в папку taskproject: `cd taskproject`
 - установить зависимости `pip install requirements.txt`
 
 ## Использование
@@ -19,7 +19,7 @@
 
 ## Модуль codegen
 
-В модуле в папке `management/commands` содержатся файлы комманд: `cadd.py` и `ccheck.py`.
+В модуле в папке `management/commands` содержатся файлы комманд: `cadd.py` для добавления кодов и `ccheck.py` для проверки кодов.
 Тесты находятся в файле `tests.py`.
 
 Коды записываются и читаются в/из файла `data_file.json` в корне проекта.

@@ -48,7 +48,6 @@ class Command(BaseCommand):
             if group in json_dict:
 
                 while len(codes) != len(set(codes)):
-                    print("wtf")
                     codes = generate_codes(amount)
 
                 value = json_dict[group]
